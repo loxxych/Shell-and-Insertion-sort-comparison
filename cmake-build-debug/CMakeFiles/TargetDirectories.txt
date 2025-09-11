@@ -1,0 +1,3 @@
+/Users/loxxych/CLionProjects/aads/cmake-build-debug/CMakeFiles/aads.dir
+/Users/loxxych/CLionProjects/aads/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/loxxych/CLionProjects/aads/cmake-build-debug/CMakeFiles/rebuild_cache.dir

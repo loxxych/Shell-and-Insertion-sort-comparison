@@ -56,8 +56,8 @@ int main()
 
     std::cout << "               ||          Comparisons          ||            Swaps             |\n";
     std::cout << "        N      ||---------------------------------------------------------------|\n";
-    std::cout << "               ||   Insertion   |     Shell     ||   Insertion   |     Shell     |\n";
-    std::cout << "------------------------------------------------------------------------\n";
+    std::cout << "               ||   Insertion   |     Shell     ||   Insertion   |     Shell    |\n";
+    std::cout << "--------------------------------------------------------------------------------|\n";
 
     for (size_t n = 10; n < 10000; n *= 2) {
         std::default_random_engine generator;
