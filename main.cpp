@@ -54,12 +54,12 @@ int main()
     int valueStartGap = 1;
     int valueEndGap = 100;
 
-    std::cout << "        N      ||          Comparisons          ||            Swaps             |\n";
-    std::cout << "               ||---------------------------------------------------------------|\n";
+    std::cout << "               ||          Comparisons          ||            Swaps             |\n";
+    std::cout << "        N      ||---------------------------------------------------------------|\n";
     std::cout << "               ||   Insertion   |     Shell     ||   Insertion   |     Shell     |\n";
     std::cout << "------------------------------------------------------------------------\n";
 
-    for (size_t n = 10; n < 100000; n *= 2) {
+    for (size_t n = 10; n < 10000; n *= 2) {
         std::default_random_engine generator;
         std::uniform_int_distribution<int> distribution(valueStartGap, valueEndGap);
 
