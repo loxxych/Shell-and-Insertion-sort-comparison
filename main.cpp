@@ -57,15 +57,16 @@ int main()
     std::cout << "               ||          Comparisons          ||            Swaps             |\n";
     std::cout << "        N      ||---------------------------------------------------------------|\n";
     std::cout << "               ||   Insertion   |     Shell     ||   Insertion   |     Shell    |\n";
-    std::cout << "--------------------------------------------------------------------------------|\n";
+    std::cout << "---------------||---------------------------------------------------------------|\n";
 
     for (size_t n = 10; n < 10000; n *= 2) {
-        std::default_random_engine generator;
         std::uniform_int_distribution<int> distribution(valueStartGap, valueEndGap);
+        std::mt19937_64 mt;
+        mt.seed(std::chrono::high_resolution_clock::now().time_since_epoch().count());
 
         // create array of size n and fill with random values
         std::vector<int> arr(n);
-        for (size_t i = 0; i < n; ++i) { arr[i] = distribution(generator); }
+        for (size_t i = 0; i < n; ++i) { arr[i] = distribution(mt); }
 
         // num of operations as pairs: first el - comparisons, second el - swaps
         std::pair<size_t, size_t> shellOperations = shellSortOperations(arr);
